@@ -11,11 +11,7 @@ Resources:
       Description: ''
       MemorySize: 128
       Timeout: 10
-      Role: 'arn:aws:iam::375283443325:role/DALambdaExecutionRole'
+      Role: 'arn:aws:iam::823501270950:role/EmployeePostLambda'
       VpcConfig:
         SecurityGroupIds:
-          - sg-cce19ca6
-        SubnetIds:
-          - subnet-6cd59e04
-          - subnet-dd8f0fa7
-          - subnet-36e50e7a
+          - sg-20611856
