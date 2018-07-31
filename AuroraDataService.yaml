@@ -7,7 +7,7 @@ Resources:
     Properties:
       Handler: app.lambda_handler
       Runtime: python3.6
-      CodeUri: .
+      CodeUri: ./LambdaCode
       Description: ''
       MemorySize: 128
       Timeout: 10
