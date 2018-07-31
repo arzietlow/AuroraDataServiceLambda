@@ -1,0 +1,21 @@
+﻿AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: An AWS Serverless Specification template describing your function.
+Resources:
+  DADataService:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: app.lambda_handler
+      Runtime: python3.6
+      CodeUri: .
+      Description: ''
+      MemorySize: 128
+      Timeout: 10
+      Role: 'arn:aws:iam::375283443325:role/DALambdaExecutionRole'
+      VpcConfig:
+        SecurityGroupIds:
+          - sg-cce19ca6
+        SubnetIds:
+          - subnet-6cd59e04
+          - subnet-dd8f0fa7
+          - subnet-36e50e7a
