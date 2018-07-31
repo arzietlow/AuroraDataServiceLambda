@@ -1,0 +1,12 @@
+version: 0.1
+phases:
+  install:
+    commands:
+      - python3 -m pip install PyMySQL 
+      - aws cloudformation package --template-file AuroraDataService.yaml --s3-bucket my-test-lambda-deployment-bucket-5
+                                   --output-template-file outputSamTemplate.yaml
+artifacts:
+  type: zip
+  files:
+    - AuroraDataService.yaml
+    - outputSamTemplate.yaml
