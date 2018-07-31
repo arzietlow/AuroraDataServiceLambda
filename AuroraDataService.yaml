@@ -14,4 +14,4 @@ Resources:
       Role: 'arn:aws:iam::823501270950:role/EmployeePostLambda'
       VpcConfig:
         SecurityGroupIds:
-          - sg-20611856
+          - sg-cd6013a6
